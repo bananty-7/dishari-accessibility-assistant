@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: ./frontend
+    ports: ["127.0.0.1:4173:80"]
+  backend:
+    build: ./backend
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      ALLOWED_ORIGINS: http://localhost:4173
+      API_KEY: ${API_KEY:-}
+# This lightweight Docker backend excludes YOLO/PyTorch. Use the Python AI setup for object detection.
