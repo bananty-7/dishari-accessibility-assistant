@@ -39,7 +39,7 @@ async def lifespan(app):
 
 
 app = FastAPI(title='Dishari Accessibility API', version='1.0.0', lifespan=lifespan)
-origins = [s.strip() for s in os.getenv('ALLOWED_ORIGINS', 'http://localhost:5173,http://localhost:4173,http://127.0.0.1:5173,http://127.0.0.1:4173').split(',') if s.strip()]
+origins = [s.strip() for s in os.getenv('ALLOWED_ORIGINS', 'http://localhost:5173,http://localhost:4173,http://127.0.0.1:5173,http://127.0.0.1:4173,https://dishari-accessibility-assistant.onrender.com').split(',') if s.strip()] 
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=['GET', 'POST'], allow_headers=['Content-Type', 'X-API-Key'])
 
 
