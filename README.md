@@ -1,4 +1,5 @@
 # দিশারী · Dishari
+![Dishari Home Screen](docs/dishari-home.png)
 
 **A Bangla-first multimodal accessibility research prototype.** Read printed Bangla and English, listen to documents, inspect medicine-label text, and explore local camera-based AI — from one accessible interface.
 
