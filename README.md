@@ -130,6 +130,8 @@ Open `http://localhost:4173`. The lightweight Docker backend excludes YOLO/PyTor
 
 ## Privacy and accessibility
 
+See the [Accessibility Statement](ACCESSIBILITY.md) for supported features, limitations, privacy details, and testing status.
+
 - OCR, PDF extraction and document text stay on the device unless the user explicitly downloads a text file.
 - Scene/object images are sent only to the configured backend; the backend does not retain images. Multipart uploads may use temporary files, which are closed after requests.
 - The app caches code and OCR models, not captured photos or reading history.
