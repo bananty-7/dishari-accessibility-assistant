@@ -140,7 +140,10 @@ Do not expose the development backend publicly as-is. For deployment, use HTTPS,
 
 ## Live Demo
 
-**Live demo:** Coming soon — deployment and testing are pending.
+- **Frontend:** https://dishari-accessibility-assistant.onrender.com
+- **Backend API health:** https://dishari-backend-drch.onrender.com/api/health
+
+The live application has been tested for connectivity and Gemini-powered scene descriptions. Optional object detection depends on the deployed backend model availability.
 
 ## GitHub upload
 
