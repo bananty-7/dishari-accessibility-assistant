@@ -146,7 +146,9 @@ Do not expose the development backend publicly as-is. For deployment, use HTTPS,
 - **Frontend:** https://dishari-accessibility-assistant.onrender.com
 - **Backend API health:** https://dishari-backend-drch.onrender.com/api/health
 
-The live application has been tested for connectivity and Gemini-powered scene descriptions. Optional object detection depends on the deployed backend model availability.
+The live frontend and backend connectivity have been verified. Gemini-powered scene descriptions are configured on the deployed backend; successful responses should be tested in the live app. The deployed health endpoint currently reports `detector: false`, so live YOLO object detection is **not currently available**. Object detection requires the model and its dependencies to be installed and configured in the deployed backend. Local object detection setup is documented above.
+
+**Privacy note:** When Gemini scene description is used, the selected image is sent to Google for processing. See the [Accessibility Statement](ACCESSIBILITY.md) for privacy, accessibility, and safety limitations.
 
 ## GitHub upload
 
